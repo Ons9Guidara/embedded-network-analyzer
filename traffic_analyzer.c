@@ -23,7 +23,7 @@ void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char
 }
 
 int main() {
-    char *dev = "lo"; // use your interface name, e.g., eth0
+    char *dev = "eth0"; 
     char errbuf[PCAP_ERRBUF_SIZE];
     
     pcap_t *handle = pcap_open_live(dev, BUFSIZ, 1, 1000, errbuf);
