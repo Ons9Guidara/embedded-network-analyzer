@@ -3,7 +3,7 @@
 A lightweight network packet capture tool for embedded Linux, written in C using `libpcap`.  
 It captures TCP and UDP packets, counts them, and computes total bytes in real time.  
 
-This project is ideal for learning about embedded Linux networking, packet analysis, and real-time monitoring.
+
 
 ---
 
@@ -42,9 +42,5 @@ curl http://127.0.0.1:8080
 ### Generate UDP traffic: 
 nc -ul 5005
 echo "hello UDP" | nc -u 127.0.0.1 5005
-### After sending traffic, the analyzer prints a live summary:
-Summary:
-TCP packets: 49
-UDP packets: 1
-Total bytes: 8058
+### After sending traffic, the analyzer prints a live summary
  
